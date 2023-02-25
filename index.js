@@ -63,9 +63,21 @@ const questions = () => {
 const writeToFile = util.promisify(fs.writeFile);
 
 // function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
+const init = async () => {
+    console.log('Welcome to the README generator');
+    try {
+      // Prompt Inquirer questions
+      const response = await questions();
+      // Pass Inquirer user responses to generate markdown
+      const markdown = generateMarkdown(response);
+      // Write markdown to file
+      await writeToFile(`${response.title}-README.md`, markdown);
+  
+      console.log('Successfully created your README.md for your project!!');
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  
+  // function to initialize program
+  init()
