@@ -9,6 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^8.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bh00fie/Professional-README-Generator.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Bh00fie/Professional-README-Generator/issues"
+  },
+  "homepage": "https://github.com/Bh00fie/Professional-README-Generator#readme"
 }
