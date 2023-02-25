@@ -74,11 +74,17 @@ ${response.description}
 - [Tests](#tests)
 - [Questions](#questions)
 
+---
+
 ## Installation
 
 ${response.installation}
 
+---
+
 ## Usage
+
+---
 
 ${response.usage}
 
@@ -86,15 +92,16 @@ ${response.usage}
 
 ${response.license}
 
----
 
-## How to Contribute
+## Contributing
 
 ${response.contributing}
 
 ## Tests
 
 ${response.tests}
+
+---
 
 ## Questions
 
