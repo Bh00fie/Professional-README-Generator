@@ -61,7 +61,7 @@ function getBadge(license) {
 function generateMarkdown(response) {
   return `
 
-# ${response.title} 
+# ${response.title} ` + getBadge(`${response.license}`) + `
 
 ## Description
 
