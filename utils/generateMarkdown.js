@@ -58,10 +58,51 @@ function getBadge(license) {
 }
 
 // function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown(response) {
+  return `
 
-`;
+# ${response.title} 
+
+## Description
+
+${response.description}
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+
+${response.installation}
+
+## Usage
+
+${response.usage}
+
+## License
+
+${response.license}
+
+---
+
+## How to Contribute
+
+${response.contributing}
+
+## Tests
+
+${response.tests}
+
+## Questions
+
+Feel free to reach out at [My GitHub Profile](https://www.github.com/${response.github}) or at my email at ${response.email} if you have any question or suggestion!
+
+`
 }
 
 module.exports = generateMarkdown;
