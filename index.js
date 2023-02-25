@@ -60,8 +60,7 @@ const questions = () => {
   }
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+const writeToFile = util.promisify(fs.writeFile);
 
 // function to initialize program
 function init() {
