@@ -59,9 +59,7 @@ function getBadge(license) {
 
 // function to generate markdown for README
 function generateMarkdown(response) {
-  return `
-
-# ${response.title} ` + getBadge(`${response.license}`) + `
+  return ` # ${response.title} ` + getBadge(`${response.license}`) + `
 
 ## Description
 
@@ -100,7 +98,7 @@ ${response.tests}
 
 ## Questions
 
-Feel free to reach out at [My GitHub Profile](https://www.github.com/${response.github}) or at my email at ${response.email} if you have any question or suggestion!
+Feel free to reach out at https://www.github.com/${response.gitHub} or at my email at ${response.email} if you have any question or suggestion!
 
 `
 }
